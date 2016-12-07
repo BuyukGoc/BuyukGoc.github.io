@@ -1,31 +1,61 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-   <link rel="image_src" href="https://d4z6dx8qrln4r.cloudfront.net/image-f97fdde6f25fc41a590c50b2b2089627-default.jpeg"/>  <meta name="og:description" content="Son zamanlarda Türkiye'den yurtdışına göçlerin hepimiz farkındayız. Göçleri Türkiye'deki olaylara göre endeksleyerek bir görselleştirme yapmak istiyoruz. Buna yardım etmek için son zamanlarda Türkiye'den ayrılmış ya da ayrılmak üzere olan bir arkadaşınızın adını, taşındığı şehri ve bulunduğu sektörü paylaşabilir misiniz?
-" /> 
+  <head>
+    <meta charset="utf-8">
+    <title>Büyük Göç</title>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <style media="screen">
+      body {  font-family: courier, monospace;}
+      .container {
+        width: 900px;
+        margin: auto;
+      }
+      header p {
+        text-align: left;
+        margin: 30px 0;
+      }
 
-  <title>GÖÇ</title>
+      header h3 {
+        text-align: left;
+      }
 
-  <!--CSS styles that ensure your typeform takes up all the available screen space (DO NOT EDIT!)-->
-  <style type="text/css">
-    html{
-      margin: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-    iframe{
-      position: absolute;
-      left:0;
-      right:0;
-      bottom:0;
-      top:0;
-      border:0;
-    }
-  </style>
-</head>
-<body>
-  <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://fatiherikli.typeform.com/to/xscaik"></iframe>
-  <script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
-</body>
+      footer p {
+        text-align: left;
+        margin: 30px 0;
+      }
+
+      footer {
+        margin-bottom: 50px;
+      }
+
+      a {
+        color: #F13D7C;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Büyük Göç</h1>
+        <p>Son zamanlarda Türkiye'den yurtdışına göçlerin hepimiz farkındayız. Göçleri Türkiye'deki olaylara göre endeksleyerek bir görselleştirme yapmak istiyoruz. Buna yardım etmek için son zamanlarda Türkiye'den ayrılmış ya da ayrılmak üzere olan bir arkadaşınızın baş harflerini, taşındığı şehri ve bulunduğu sektörü paylaşabilir misiniz?</p>
+
+        <h3>Bu zamana kadar gönderilen kayıtlar (750)</h3>
+      </header>
+      Yıl: <input class="range" type="range" name="rangeInput" id="rangeInput" value="0" min="0" />
+      <output for="rangeInput" id="year">2016</output>
+      <div id="goc">
+      </div>
+      <footer>
+        <p>Bildirim yapmak için <a href="bildir.html">buraya</a> tıklayabilirsiniz.</p>
+        <p>
+          Veri Görselleştirme: <a href="http://twitter.com/terskaplumbaa">@terskaplumbaa <i class="em em-turtle"></i></a>  <br>
+          Veri Derleme:
+          <a href="http://twitter.com/yiit">@yiit</a>,
+          <a href="http://twitter.com/fthrkl">@fthrkl</a>,
+          <a href="http://twitter.com/kemalbsoylu">@kemalbsoylu</a>
+        </p>
+      </footer>
+      <script src="./bundle.js"></script>
+    </div>
+  </body>
 </html>
