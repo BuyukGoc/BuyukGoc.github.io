@@ -10097,7 +10097,7 @@
 	      return Math.max(1, d.value);
 	    });
 	    link.append("title").text(function (d) {
-	      return d.source.name + " to " + d.target.name + " = " + d.value;
+	      return d.source.name + " to " + d.target.name + " = " + d.value + " person";
 	    });
 
 	    const nodes = svg.append("g").selectAll(".node").data(data.nodes).enter().append("g").attr('class', " node").attr({
