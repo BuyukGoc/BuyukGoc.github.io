@@ -9968,7 +9968,7 @@
 	  const nodeMap = {};
 	  const margin = { top: 30, right: 1, bottom: 50, left: 1 };
 	  const width = 960 - margin.left - margin.right;
-	  const height = 1400 - margin.top - margin.bottom;
+	  const height = 1690 - margin.top - margin.bottom;
 	  const color = d3.scale.category20();
 	  let DATA = __webpack_require__(11);
 	  let current_year = 2016;
@@ -12261,7 +12261,7 @@
 		{
 			"Yil": 2015,
 			"Ulke": "Almanya",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Berlin",
 			"Nerden": "Turkiye"
 		},
@@ -12303,7 +12303,7 @@
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "-",
 			"Nerden": "Turkiye"
 		},
@@ -12345,7 +12345,7 @@
 		{
 			"Yil": 2017,
 			"Ulke": "Almanya",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Berlin",
 			"Nerden": "Turkiye"
 		},
@@ -12688,7 +12688,7 @@
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Leipzig",
 			"Nerden": "Turkiye"
 		},
@@ -13087,7 +13087,7 @@
 		{
 			"Yil": 2015,
 			"Ulke": "Amerika",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "-",
 			"Nerden": "Turkiye"
 		},
@@ -13402,14 +13402,14 @@
 		{
 			"Yil": 2014,
 			"Ulke": "Amerika",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "-",
 			"Nerden": "Turkiye"
 		},
 		{
 			"Yil": 2014,
 			"Ulke": "Amerika",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "-",
 			"Nerden": "Turkiye"
 		},
@@ -13458,7 +13458,7 @@
 		{
 			"Yil": 2014,
 			"Ulke": "Amerika",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "New York",
 			"Nerden": "Turkiye"
 		},
@@ -13605,7 +13605,7 @@
 		{
 			"Yil": 2015,
 			"Ulke": "Amerika",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Cleveland",
 			"Nerden": "Turkiye"
 		},
@@ -13801,7 +13801,7 @@
 		{
 			"Yil": 2017,
 			"Ulke": "Avustralya",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "-",
 			"Nerden": "Turkiye"
 		},
@@ -14186,7 +14186,7 @@
 		{
 			"Yil": 2015,
 			"Ulke": "Galler",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Colwyn Bay",
 			"Nerden": "Turkiye"
 		},
@@ -14235,7 +14235,7 @@
 		{
 			"Yil": 2016,
 			"Ulke": "Hollanda",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Amsterdam",
 			"Nerden": "Turkiye"
 		},
@@ -14809,7 +14809,7 @@
 		{
 			"Yil": 2017,
 			"Ulke": "Ingiltere",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Londra",
 			"Nerden": "Turkiye"
 		},
@@ -14949,7 +14949,7 @@
 		{
 			"Yil": 2016,
 			"Ulke": "Ingiltere",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Londra",
 			"Nerden": "Turkiye"
 		},
@@ -14991,7 +14991,7 @@
 		{
 			"Yil": 2005,
 			"Ulke": "Ingiltere",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Londra",
 			"Nerden": "Turkiye"
 		},
@@ -15166,7 +15166,7 @@
 		{
 			"Yil": 2016,
 			"Ulke": "Ispanya",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Barcelona",
 			"Nerden": "Turkiye"
 		},
@@ -15362,7 +15362,7 @@
 		{
 			"Yil": 2015,
 			"Ulke": "Italya",
-			"Sektor": "Tip",
+			"Sektor": "Saglik",
 			"Sehir": "Milano",
 			"Nerden": "Turkiye"
 		},
@@ -16262,7 +16262,7 @@
 		{
 			"Yil": 2014,
 			"Ulke": "Amerika",
-			"Sektor": "Tip"
+			"Sektor": "Saglik"
 		},
 		{
 			"Yil": null,
@@ -16802,6 +16802,1056 @@
 		{
 			"Yil": 2014,
 			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Medya"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Medya"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Somali",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Belcika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Iletisim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Fransa",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ispanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Irlanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 1998,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Irlanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Isvec",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Belcika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Rusya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Irlanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Danimarka",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Isvicre",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Macaristan",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Isvec",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2006,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Isvec",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Hollanda",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Tayland",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Tayland",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Portekiz",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Brezilya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kambocya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Kanada",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2019,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Iletisim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Irlanda",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Isvec",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Finlandiya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Is Gelistirme"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Nijerya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Kambocya",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 1997,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Rusya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Amerika",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Isvicre",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Polonya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": ""
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Avustralya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Is Gelistirme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ispanya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": ""
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Is Gelistirme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avustralya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2005,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Avusturya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Japonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avusturya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Israil",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2001,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2006,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2006,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2006,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Tanzanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Avustralya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Irak",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kambocya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Finlandiya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Isvicre",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Isvicre",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Is Gelistirme"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Gazeteci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Japonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Peru",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Finlandiya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Kanada",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
 			"Sektor": "Muhendislik"
 		}
 	];
