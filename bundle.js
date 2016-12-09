@@ -83,7 +83,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  font-family: courier, monospace;\n}\n.node rect {\n  fill-opacity: 1;\n  shape-rendering: crispEdges;\n}\n.link {\n  fill: none;\n  stroke-opacity: .5;\n}\n.link:hover {\n  stroke-opacity: 1;\n}\nrect.bordered {\n  stroke: #E6E6E6;\n  stroke-width: 2px;\n}\ntext.mono {\n  font-size: 9pt;\n  fill: #aaa;\n}\n.em.em-turtle {\n  transform: rotate(180deg);\n}\n", ""]);
+	exports.push([module.id, "body {\n  font-family: courier, monospace;\n}\n.node rect {\n  fill-opacity: 1;\n  shape-rendering: crispEdges;\n}\n.link {\n  fill: none;\n  stroke-opacity: .5;\n}\n.link:hover {\n  stroke-opacity: 1;\n}\nrect.bordered {\n  stroke: #E6E6E6;\n  stroke-width: 2px;\n}\ntext.mono {\n  font-size: 9pt;\n  fill: #aaa;\n}\n.em.em-turtle {\n  transform: rotate(180deg);\n}\n@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {\n  #goc {\n    margin-top: -350px;\n    margin-bottom: -350px;\n    transform: scale(0.6);\n  }\n}\n", ""]);
 
 	// exports
 
@@ -9968,7 +9968,7 @@
 	  const nodeMap = {};
 	  const margin = { top: 30, right: 1, bottom: 50, left: 1 };
 	  const width = 960 - margin.left - margin.right;
-	  const height = 1690 - margin.top - margin.bottom;
+	  const height = 1810 - margin.top - margin.bottom;
 	  const color = d3.scale.category20();
 	  let DATA = __webpack_require__(11);
 	  let current_year = 2016;
@@ -10108,7 +10108,7 @@
 	      return d;
 	    }).on("dragstart", function () {
 	      this.parentNode.appendChild(this);
-	    }).on("drag", dragmove)).on("mouseover", fade(0.3)).on("mouseout", fade(1));
+	    }).on("drag", dragmove)).on("mouseover", fade(0.1)).on("mouseout", fade(1));
 
 	    nodes.append("rect").attr({
 	      height: function (d) {
@@ -10124,7 +10124,7 @@
 	    });
 	    nodes.append("text").attr("x", -6).attr("y", function (d) {
 	      return d.dy / 2;
-	    }).attr("dy", ".35em").attr("text-anchor", "end").attr("transform", null).text(function (d) {
+	    }).attr("dy", ".35em").attr("text-anchor", "end").attr("font-size", "20px").attr("transform", null).text(function (d) {
 	      if (d.sourceLinks.length != 0 || d.targetLinks.length != 0) return d.name;
 	    }).filter(function (d) {
 	      return d.x < width / 2;
@@ -12037,3887 +12037,67 @@
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "Pazarlama",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2005,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Dortmund",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Ceviri",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Hamburg",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Sanat",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Hamburg",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "Isletme",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Isletme",
-			"Sehir": "Koln",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Paderborn",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "Saglik",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Diger",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Is Gelistirme",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Saglik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Saglik",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Waldorf",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Tasarim",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Tasarim",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Tasarim",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Pazarlama",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Analiz",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Dusseldorf",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Is Gelistirme",
-			"Sehir": "Frankfurt",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Hukuk",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Mimar",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Frankfrut",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Aachen",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Duisburg",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Stuttgart",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Stuttgart",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Finans",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Flensburg",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Hukuk",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Pazarlama",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Finans",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
+			"Sektor": "Mimar"
 		},
 		{
 			"Yil": 2009,
 			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Finans"
 		},
 		{
 			"Yil": 2015,
 			"Ulke": "Almanya",
-			"Sektor": "Finans",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Heidelberg",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Sanat",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Almanya",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "Tasarim",
-			"Sehir": "Leipzig",
-			"Nerden": "Turkiye"
+			"Sektor": "Medya, Iletisim ve Yayincilik"
 		},
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "Saglik",
-			"Sehir": "Leipzig",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Pazarlama",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Mimar",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Diger",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Almanya",
-			"Sektor": "Diger",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Hukuk",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Munih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Almanya",
-			"Sektor": "Isletme",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Almanya",
-			"Sektor": "Sanat",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Mimar",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Berlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Almanya",
-			"Sektor": "IT",
-			"Sehir": "Bonn",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "New Jersey",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Seattle",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Amerika",
-			"Sektor": "Girisim",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Amerika",
-			"Sektor": "Girisim",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Tasarim",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Pazarlama",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Hukuk",
-			"Sehir": "Mami",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Yemek",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Atlanta",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "Boston",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Seattle",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Saglik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "Boston",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Houston",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Houston",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Askeriye",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Texas",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Bloomington",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Santa Barbara",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Seattle",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "California",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Dallas",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "California",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2009,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Tasarim",
-			"Sehir": "New Jersey",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Virgina",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "California",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Diego",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "California",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Palo Alto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Finans",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Pazarlama",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik",
-			"Sehir": "Texas",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Amerika",
-			"Sektor": "Tasarim",
-			"Sehir": "Santa Monica",
-			"Nerden": "Turkiye"
+			"Sektor": "Medya, Iletisim ve Yayincilik"
 		},
 		{
 			"Yil": 2012,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
+			"Ulke": "Almanya",
+			"Sektor": "Pazarlama"
 		},
 		{
 			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
+			"Ulke": "Almanya",
+			"Sektor": "IT"
 		},
 		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Saglik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Saglik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "Bloomington",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "Chicago",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Turizm",
-			"Sehir": "DC",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Saglik",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "Oberlin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "New Orleans",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "New Orleans",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar",
-			"Sehir": "Providence",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Diger",
-			"Sehir": "San Diego",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Finans",
-			"Sehir": "San Diego",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar",
-			"Sehir": "Boston",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "Chicago",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik",
-			"Sehir": "Boston",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "Houston",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Saglik",
-			"Sehir": "Cleveland",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2009,
-			"Ulke": "Amerika",
-			"Sektor": "Finans",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "Pittburgh",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "California",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Tasarim",
-			"Sehir": "California",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Fransisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2019,
-			"Ulke": "Amerika",
-			"Sektor": "Pazarlama",
-			"Sehir": "California",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Diger",
-			"Sehir": "San Fransisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat",
-			"Sehir": "Los Angeles",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "San Francisco",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik",
-			"Sehir": "Missouri",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Arnavutluk",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Avustralya",
-			"Sektor": "IT",
-			"Sehir": "Sidney",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "IT",
-			"Sehir": "Sidney",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "IT",
-			"Sehir": "Melbourne",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "IT",
-			"Sehir": "Sidney",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Avustralya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Melbourne",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "Diger",
-			"Sehir": "Sidney",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "Yemek",
-			"Sehir": "Melbourne",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Avustralya",
-			"Sektor": "Saglik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "Pazarlama",
-			"Sehir": "Sidney",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Avustralya",
-			"Sektor": "IT",
-			"Sehir": "Brisbane",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Avustralya",
-			"Sektor": "Diger",
-			"Sehir": "Sidney",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Avustralya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Avustralya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Avusturya",
-			"Sektor": "IT",
-			"Sehir": "Viyana",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "Akademi",
-			"Sehir": "Viyana",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "IT",
-			"Sehir": "Viyana",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Avusturya",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Avusturya",
-			"Sektor": "Akademi",
-			"Sehir": "Viyana",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 1999,
-			"Ulke": "Avusturya",
-			"Sektor": "Sanat",
-			"Sehir": "Viyana",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Avusturya",
-			"Sektor": "Hukuk",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Avusturya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Belcika",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Belcika",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "Diger",
-			"Sehir": "Dubai",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "Ceviri",
-			"Sehir": "Dubai",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "IT",
-			"Sehir": "Dubai",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "Analiz",
-			"Sehir": "Dubai",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "Muhendislik",
-			"Sehir": "Dubai",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "IT",
-			"Sehir": "Dubai",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Bulgaristan",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Bulgaristan",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2007,
-			"Ulke": "Cek Cumhuriyeti",
-			"Sektor": "IT",
-			"Sehir": "Prag",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Cek Cumhuriyeti",
-			"Sektor": "Akademi",
-			"Sehir": "Karlovy Vary",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Cin",
-			"Sektor": "Is Gelistirme",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Colombia",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Danimarka",
-			"Sektor": "Pazarlama",
-			"Sehir": "Aarhus",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Danimarka",
-			"Sektor": "Tasarim",
-			"Sehir": "Kopenhag",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Danimarka",
-			"Sektor": "Mimar",
-			"Sehir": "Kopenhag",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Danimarka",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Danimarka",
-			"Sektor": "Sanat",
-			"Sehir": "Vejle",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Danimarka",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Estonya",
-			"Sektor": "IT",
-			"Sehir": "Tallinn",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Estonya",
-			"Sektor": "IT",
-			"Sehir": "Tallinn",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Estonya",
-			"Sektor": "Akademi",
-			"Sehir": "Tallinn",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Estonya",
-			"Sektor": "IT",
-			"Sehir": "Tallinn",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Fas",
-			"Sektor": "Tasarim",
-			"Sehir": "Casablanca",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2007,
-			"Ulke": "Filipinler",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Finlandiya",
-			"Sektor": "IT",
-			"Sehir": "Oulu",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Finlandiya",
-			"Sektor": "Akademi",
-			"Sehir": "Helsinki",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2007,
-			"Ulke": "Finlandiya",
-			"Sektor": "IT",
-			"Sehir": "Helsinki",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Finlandiya",
-			"Sektor": "IT",
-			"Sehir": "Helsinki",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Finlandiya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Fransa",
-			"Sektor": "IT",
-			"Sehir": "Paris",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Fransa",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Fransa",
-			"Sektor": "Finans",
-			"Sehir": "Paris",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Fransa",
-			"Sektor": "Siyaset",
-			"Sehir": "Bordeux",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Fransa",
-			"Sektor": "IT",
-			"Sehir": "Paris",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Fransa",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Fransa",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Fransa",
-			"Sektor": "Tasarim",
-			"Sehir": "Nice",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Fransa",
-			"Sektor": "Akademi",
-			"Sehir": "Marseille",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Galler",
-			"Sektor": "Saglik",
-			"Sehir": "Colwyn Bay",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Guney Afrika",
-			"Sektor": "IT",
-			"Sehir": "Cape Town",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Guney Afrika",
-			"Sektor": "Ticaret",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Gurcistan",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Saglik",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Ceviri",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "Utrecht",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "Rotterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Rotterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Endustri",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Tiel",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Lahey",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Finans",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Is Gelistirme",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2019,
-			"Ulke": "Hollanda",
-			"Sektor": "Ticaret",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Hollanda",
-			"Sektor": "Tasarim",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2020,
-			"Ulke": "Hollanda",
-			"Sektor": "Diger",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Eindhoven",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Hollanda",
-			"Sektor": "Mimar",
-			"Sehir": "Delft",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Hollanda",
-			"Sektor": "Diger",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2005,
-			"Ulke": "Hollanda",
-			"Sektor": "Ticaret",
-			"Sehir": "Rotterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Diger",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "Sanat",
-			"Sehir": "Utrecht",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Hollanda",
-			"Sektor": "Tasarim",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT",
-			"Sehir": "Amsterdam",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Ingiltere",
-			"Sektor": "Analiz",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Pazarlama",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Ingiltere",
-			"Sektor": "Girisim",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Endustri",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Sanat",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Finans",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "New York",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim",
-			"Sehir": "Oxford",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Buckinghamshire",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Diger",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "Saglik",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Mimar",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Hukuk",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Akademi",
-			"Sehir": "Hertfordshire",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Muhendislik",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Ingiltere",
-			"Sektor": "Finans",
-			"Sehir": "Bournemouth",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Sanat",
-			"Sehir": "Diger",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Muhendislik",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Saglik",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Pazarlama",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2005,
-			"Ulke": "Ingiltere",
-			"Sektor": "Saglik",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Sanat",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Diger",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Pazarlama",
-			"Sehir": "Londra",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT",
-			"Sehir": "Cambridge",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Irlanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "Dublin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Irlanda",
-			"Sektor": "IT",
-			"Sehir": "Dublin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Irlanda",
-			"Sektor": "Mimar",
-			"Sehir": "Dublin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Irlanda",
-			"Sektor": "IT",
-			"Sehir": "Diger",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Irlanda",
-			"Sektor": "IT",
-			"Sehir": "Dublin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Irlanda",
-			"Sektor": "IT",
-			"Sehir": "Dublin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Irlanda",
-			"Sektor": "IT",
-			"Sehir": "Dublin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Irlanda",
-			"Sektor": "Is Gelistirme",
-			"Sehir": "aadsaad",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Irlanda",
-			"Sektor": "Muhendislik",
-			"Sehir": "Dublin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Irlanda",
-			"Sektor": "IT",
-			"Sehir": "Dublin",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Iskocya",
-			"Sektor": "IT",
-			"Sehir": "Edinburgh",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Iskocya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Edinburg",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Iskocya",
-			"Sektor": "Akademi",
-			"Sehir": "Edinburgh",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "IT",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ispanya",
-			"Sektor": "Pazarlama",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "Is Gelistirme",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "Saglik",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Ispanya",
-			"Sektor": "IT",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "Mimar",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "IT",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "IT",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "IT",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ispanya",
-			"Sektor": "IT",
-			"Sehir": "Barcelona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "Finans",
-			"Sehir": "Madrit",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2009,
-			"Ulke": "Ispanya",
-			"Sektor": "Akademi",
-			"Sehir": "Barselona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Ispanya",
-			"Sektor": "Akademi",
-			"Sehir": "Barselona",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Ispanya",
-			"Sektor": "Pazarlama",
-			"Sehir": "Madrit",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvec",
-			"Sektor": "Akademi",
-			"Sehir": "Stockholm",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvec",
-			"Sektor": "Is Gelistirme",
-			"Sehir": "Stockholm",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Isvec",
-			"Sektor": "IT",
-			"Sehir": "Stockholm",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Isvec",
-			"Sektor": "Tasarim",
-			"Sehir": "Stockholm",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Isvec",
-			"Sektor": "IT",
-			"Sehir": "Stockholm",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Isvec",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Isvec",
-			"Sektor": "IT",
-			"Sehir": "Almhult",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvec",
-			"Sektor": "Diger",
-			"Sehir": "Stockholm",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvec",
-			"Sektor": "IT",
-			"Sehir": "Stockholm",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Isvicre",
-			"Sektor": "IT",
-			"Sehir": "Solothurn",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvicre",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvicre",
-			"Sektor": "Akademi",
-			"Sehir": "Freiburg",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Isvicre",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvicre",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Isvicre",
-			"Sektor": "IT",
-			"Sehir": "Zurih",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Italya",
-			"Sektor": "IT",
-			"Sehir": "Roma",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2004,
-			"Ulke": "Italya",
-			"Sektor": "Tasarim",
-			"Sehir": "Milano",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Italya",
-			"Sektor": "Saglik",
-			"Sehir": "Milano",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2019,
-			"Ulke": "Italya",
-			"Sektor": "IT",
-			"Sehir": "Sicilya",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Italya",
-			"Sektor": "Akademi",
-			"Sehir": "Milano",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Italya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Bolonya",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Italya",
-			"Sektor": "Pazarlama",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Japonya",
-			"Sektor": "IT",
-			"Sehir": "Tokyo",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Japonya",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Japonya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kambocya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kambocya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Kambocya",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "Girisim",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "Sanat",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "Vancouver",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "Diger",
-			"Sehir": "Vancouver",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "Quebec",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Kanada",
-			"Sektor": "Isletme",
-			"Sehir": "Vancouver",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 1999,
-			"Ulke": "Kanada",
-			"Sektor": "Pazarlama",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Diger",
-			"Sehir": "Montreal",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Tasarim",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Akademi",
-			"Sehir": "Vancouver",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Tasarim",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Kanada",
-			"Sektor": "Akademi",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Kanada",
-			"Sektor": "Endustri",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2022,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Kanada",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "Tasarim",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Kanada",
-			"Sektor": "Finans",
-			"Sehir": "Montreal",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "Vancouver",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "IT",
-			"Sehir": "Toronto",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Katar",
-			"Sektor": "Endustri",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kirgizistan",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "KKTC",
-			"Sektor": "IT",
-			"Sehir": "Girne",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2002,
-			"Ulke": "Liberya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Litvanya",
-			"Sektor": "Pazarlama",
-			"Sehir": "Vilnius",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Lubnan",
-			"Sektor": "Muhendislik",
-			"Sehir": "Beyrut",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Luksemburg",
-			"Sektor": "IT",
-			"Sehir": "Luksemburg",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Macaristan",
-			"Sektor": "Akademi",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Macaristan",
-			"Sektor": "Akademi",
-			"Sehir": "Budapeste",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Macaristan",
-			"Sektor": "IT",
-			"Sehir": "Budapeste",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Makedonya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Makedonya",
-			"Sektor": "Endustri",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Malezya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Malta",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Norvec",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Peru",
-			"Sektor": "Diger",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Polonya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Polonya",
-			"Sektor": "Yemek",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Polonya",
-			"Sektor": "IT",
-			"Sehir": "Krakow",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Polonya",
-			"Sektor": "IT",
-			"Sehir": "Krakow",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Polonya",
-			"Sektor": "Akademi",
-			"Sehir": "Loz",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Polonya",
-			"Sektor": "IT",
-			"Sehir": "Katowice",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Polonya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Polonya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Polonya",
-			"Sektor": "Pazarlama",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Polonya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Polonya",
-			"Sektor": "Tasarim",
-			"Sehir": "Varsova",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Portekiz",
-			"Sektor": "Sanat",
-			"Sehir": "Lizbon",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Romanya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Rusya",
-			"Sektor": "IT",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Rusya",
-			"Sektor": "Muhendislik",
-			"Sehir": "-",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Rusya",
-			"Sektor": "Muhendislik",
-			"Sehir": "Moskova",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Singapur",
-			"Sektor": "IT",
-			"Sehir": "Singapur",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Singapur",
-			"Sektor": "Akademi",
-			"Sehir": "Singapur",
-			"Nerden": "Turkiye"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Singapur",
-			"Sektor": "Akademi",
-			"Sehir": "Singapur",
-			"Nerden": "Turkiye"
-		},
-		{
 			"Yil": 2016,
-			"Ulke": "Sirbistan",
-			"Sektor": "Muhendislik",
-			"Sehir": "Belgrad",
-			"Nerden": "Turkiye"
+			"Ulke": "Almanya",
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Suudi Arabistan",
-			"Sektor": "Finans",
-			"Sehir": "Riyad",
-			"Nerden": "Turkiye"
+			"Ulke": "Almanya",
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2017,
@@ -15925,38 +12105,28 @@
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
 		},
 		{
-			"Yil": 2014,
-			"Ulke": "Hollanda",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2007,
-			"Ulke": "Japonya",
+			"Yil": 2017,
+			"Ulke": "Almanya",
 			"Sektor": "Diger"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
+			"Ulke": "Almanya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "Muhendislik"
 		},
 		{
@@ -15965,559 +12135,479 @@
 			"Sektor": "IT"
 		},
 		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
 			"Yil": 2013,
-			"Ulke": "Amerika",
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "Ogrenci"
 		},
 		{
 			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Yemek"
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
 		},
 		{
-			"Yil": 2017,
-			"Ulke": "Polonya",
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Hollanda",
+			"Ulke": "Almanya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2002,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2006,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Almanya",
 			"Sektor": "Pazarlama"
 		},
 		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
 			"Yil": 2017,
-			"Ulke": "Ingiltere",
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2006,
-			"Ulke": "Danimarka",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Danimarka",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Irlanda",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Seattle",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2012,
 			"Ulke": "Almanya",
 			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Estonya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2003,
-			"Ulke": "Amerika",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Almanya",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Avusturya",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Ingiltere",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Ingiltere",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Irlanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 1997,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Norvec",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Kanada",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Kanada",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Almanya",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ispanya",
-			"Sektor": "Yemek"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ispanya",
-			"Sektor": "Yemek"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Saglik"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Italya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Finans"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "Medya"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvicre",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2009,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Finans"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Ogrenci"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Ceviri"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Faroe",
-			"Sektor": "Ogrenci"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2019,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Finans"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Belcika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Iskocya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Danimarka",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Danimarka",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Yunanistan",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Uganda",
-			"Sektor": "Yemek"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Papua Yani Gine",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Fransa",
-			"Sektor": "Ogrenci"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Ukrayna",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Italya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Ogrenci"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2009,
-			"Ulke": "Finlandiya",
-			"Sektor": "Ceviri"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Litvanya",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2011,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2004,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Almanya",
-			"Sektor": "Pazarlama"
 		},
 		{
 			"Yil": 2014,
@@ -16525,409 +12615,29 @@
 			"Sektor": "Muhendislik"
 		},
 		{
-			"Yil": 2014,
-			"Ulke": "Avusturya",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "Analiz"
-		},
-		{
-			"Yil": 2003,
-			"Ulke": "Amerika",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Avusturya",
-			"Sektor": "Yemek"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Belcika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
+			"Yil": 2007,
 			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 1999,
-			"Ulke": "Avusturya",
-			"Sektor": "Yemek"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Cek",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Yeni Zelanda",
-			"Sektor": "Hukuk"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Isvec",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2013,
-			"Ulke": "Ispanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvicre",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvicre",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Fransa",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2009,
-			"Ulke": "Isvicre",
-			"Sektor": "Endustri"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Azerbeycan",
-			"Sektor": "Medya"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Uganda",
-			"Sektor": "Is Gelistirme"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Ogrenci"
+			"Sektor": "Akademi"
 		},
 		{
 			"Yil": 2017,
-			"Ulke": "Isvicre",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Amerika",
-			"Sektor": "Medya"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Amerika",
-			"Sektor": "Analiz"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "Finans"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvec",
-			"Sektor": "Analiz"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2010,
 			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2015,
 			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2009,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Finlandiya",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2001,
-			"Ulke": "Fransa",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2009,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Fransa",
-			"Sektor": "Ogrenci"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Medya"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Medya"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Somali",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Belcika",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Almanya",
-			"Sektor": "Iletisim"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Medya"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Fransa",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Ispanya",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2012,
 			"Ulke": "Almanya",
 			"Sektor": "Ogrenci"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Irlanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Ingiltere",
-			"Sektor": "Medya"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Almanya",
-			"Sektor": "Saglik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Saglik"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "Medya"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 1998,
@@ -16935,29 +12645,9 @@
 			"Sektor": "Sanat"
 		},
 		{
-			"Yil": 2017,
+			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Irlanda",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
+			"Sektor": "Saglik"
 		},
 		{
 			"Yil": 2016,
@@ -16965,33 +12655,13 @@
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2016,
+			"Yil": 2011,
 			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Isvec",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
 			"Sektor": "Isletme"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
 			"Ulke": "Almanya",
-			"Sektor": "Finans"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Ingiltere",
 			"Sektor": "Muhendislik"
 		},
 		{
@@ -17000,19 +12670,14 @@
 			"Sektor": "IT"
 		},
 		{
+			"Yil": 2011,
+			"Ulke": "Almanya",
+			"Sektor": "Pazarlama"
+		},
+		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
 			"Sektor": "IT"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Almanya",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2015,
@@ -17020,94 +12685,89 @@
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2017,
-			"Ulke": "Belcika",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Rusya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Amerika",
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Hollanda",
+			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "Pazarlama"
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
 		},
 		{
-			"Yil": 2013,
-			"Ulke": "Birlesik Arap Emirlikleri",
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Medya"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
 			"Sektor": "Tasarim"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2012,
-			"Ulke": "Irlanda",
-			"Sektor": "IT"
+			"Ulke": "Almanya",
+			"Sektor": "Analiz"
 		},
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
-			"Sektor": "Isletme"
+			"Sektor": "Is ve Yonetim"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "IT"
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Danimarka",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Analiz"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvicre",
+			"Ulke": "Almanya",
 			"Sektor": "Akademi"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Amerika",
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2015,
-			"Ulke": "Avusturya",
-			"Sektor": "IT"
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
 		},
 		{
 			"Yil": 2015,
@@ -17115,54 +12775,19 @@
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2018,
-			"Ulke": "Hollanda",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2015,
+			"Yil": 2007,
 			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Isletme"
-		},
-		{
 			"Yil": 2017,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
 		},
 		{
-			"Yil": 2015,
-			"Ulke": "Macaristan",
-			"Sektor": "Ogrenci"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvec",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Ogrenci"
+			"Yil": 2007,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
 		},
 		{
 			"Yil": 2006,
@@ -17170,62 +12795,437 @@
 			"Sektor": "IT"
 		},
 		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Isvec",
-			"Sektor": "Tasarim"
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Hollanda",
+			"Ulke": "Almanya",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2012,
-			"Ulke": "Hollanda",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
+			"Ulke": "Almanya",
 			"Sektor": "Muhendislik"
 		},
 		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Finans"
+		},
+		{
 			"Yil": 2014,
-			"Ulke": "Amerika",
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Almanya",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2014,
-			"Ulke": "Tayland",
-			"Sektor": "Diger"
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
 		},
 		{
-			"Yil": 2014,
-			"Ulke": "Tayland",
-			"Sektor": "Tasarim"
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IK"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Almanya",
 			"Sektor": "Mimar"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
+			"Ulke": "Almanya",
 			"Sektor": "Akademi"
 		},
 		{
 			"Yil": 2015,
 			"Ulke": "Almanya",
-			"Sektor": "IT"
+			"Sektor": "Finans"
 		},
 		{
-			"Yil": 2015,
+			"Yil": 2016,
 			"Ulke": "Almanya",
 			"Sektor": "IT"
 		},
@@ -17236,12 +13236,352 @@
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
+			"Ulke": "Almanya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2005,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2006,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Almanya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
 			"Sektor": "Pazarlama"
 		},
 		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Lojistik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
 			"Yil": 2016,
-			"Ulke": "Avusturya",
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Almanya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Almanya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Almanya",
 			"Sektor": "Saglik"
 		},
 		{
@@ -17251,83 +13591,368 @@
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Diger"
+			"Ulke": "Almanya",
+			"Sektor": "Ogrenci"
 		},
 		{
 			"Yil": 2016,
 			"Ulke": "Almanya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 1999,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Amerika",
 			"Sektor": "Saglik"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Portekiz",
+			"Ulke": "Amerika",
 			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Avusturya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2016,
 			"Ulke": "Amerika",
-			"Sektor": "Akademi"
+			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
 			"Ulke": "Amerika",
 			"Sektor": "Pazarlama"
 		},
 		{
 			"Yil": 2014,
-			"Ulke": "Fransa",
-			"Sektor": "Akademi"
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
 		},
 		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
+			"Yil": null,
+			"Ulke": "Amerika",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Amerika",
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2014,
-			"Ulke": "Brezilya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kambocya",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "Akademi"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Ceviri"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
+			"Yil": 2012,
+			"Ulke": "Amerika",
 			"Sektor": "Analiz"
 		},
 		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2003,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2002,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Amerika",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 1998,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Askeriye"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Amerika",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
 			"Yil": 2014,
 			"Ulke": "Amerika",
 			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 1997,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2013,
@@ -17336,96 +13961,11 @@
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Pazarlama"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Kanada",
-			"Sektor": "Turizm"
-		},
-		{
-			"Yil": 2019,
 			"Ulke": "Amerika",
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Muhendislik"
-		},
-		{
 			"Yil": 2015,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "Iletisim"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avusturya",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Irlanda",
-			"Sektor": "Ceviri"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Isvec",
-			"Sektor": "Finans"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Finlandiya",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Hollanda",
-			"Sektor": "Is Gelistirme"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Amerika",
-			"Sektor": "Mimar"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Nijerya",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Birlesik Arap Emirlikleri",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2014,
-			"Ulke": "Kambocya",
-			"Sektor": "Yemek"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 1997,
 			"Ulke": "Amerika",
 			"Sektor": "IT"
 		},
@@ -17437,32 +13977,602 @@
 		{
 			"Yil": 2008,
 			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
 			"Sektor": "Muhendislik"
 		},
 		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2005,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
 			"Yil": 2014,
-			"Ulke": "Rusya",
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2003,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
 			"Sektor": "Saglik"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Kanada",
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Hukuk"
+			"Ulke": "Amerika",
+			"Sektor": "Ceviri"
 		},
 		{
 			"Yil": 2017,
-			"Ulke": "Kanada",
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Avusturya",
+			"Ulke": "Amerika",
 			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2002,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Askeriye"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2004,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 1997,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Lojistik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2004,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 1995,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2009,
@@ -17472,16 +14582,36 @@
 		{
 			"Yil": 2011,
 			"Ulke": "Amerika",
-			"Sektor": "Ceviri"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Isvicre",
 			"Sektor": "IT"
 		},
 		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
 			"Yil": 2015,
-			"Ulke": "Polonya",
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
 			"Sektor": "Muhendislik"
 		},
 		{
@@ -17490,9 +14620,504 @@
 			"Sektor": "Muhendislik"
 		},
 		{
+			"Yil": 2001,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
 			"Yil": 2016,
-			"Ulke": "Avusturya",
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
 			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2003,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 1996,
+			"Ulke": "Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Askeriye"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2004,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "Askeriye"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Ticaret"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2222,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2019,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2002,
+			"Ulke": "Amerika",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IK"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Amerika",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2019,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2000,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2002,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
 		},
 		{
 			"Yil": 2013,
@@ -17500,14 +15125,204 @@
 			"Sektor": "Mimar"
 		},
 		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": ""
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 1998,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Hollanda",
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2019,
+			"Ulke": "Amerika",
 			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Amerika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2000,
+			"Ulke": "Amerika",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Amerika",
+			"Sektor": "Iktisat"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2005,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Amerika",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avustralya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Lojistik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2014,
@@ -17516,43 +15331,1133 @@
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Turizm"
+			"Ulke": "Avustralya",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Avustralya",
+			"Sektor": "Akademi"
 		},
 		{
 			"Yil": 2015,
-			"Ulke": "Amerika",
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Avustralya",
 			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kanada",
-			"Sektor": "Is Gelistirme"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ispanya",
+			"Ulke": "Avustralya",
 			"Sektor": "Pazarlama"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Diger"
+			"Ulke": "Avustralya",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avustralya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avustralya",
+			"Sektor": "Pazarlama"
 		},
 		{
 			"Yil": 2015,
-			"Ulke": "Almanya",
+			"Ulke": "Avustralya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Avustralya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Iktisat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Ticaret"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": ""
+			"Ulke": "Avustralya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avustralya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Avustralya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avustralya",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Avustralya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avustralya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Avustralya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avustralya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avustralya",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avusturya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Avusturya",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avusturya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Avusturya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Lojistik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Avusturya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Avusturya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 1999,
+			"Ulke": "Avusturya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avusturya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 1999,
+			"Ulke": "Avusturya",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Avusturya",
+			"Sektor": "IK"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Avusturya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Avusturya",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avusturya",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avusturya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Avusturya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Avusturya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Avusturya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Avusturya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Avusturya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Avusturya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2004,
+			"Ulke": "Bati Asya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Bati Asya",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Belcika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Belcika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Belcika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Belcika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Belcika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Belcika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Belcika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Belcika",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Belcika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Belcika",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Belcika",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Belcika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Belcika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Ticaret"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Birlesik Arap Emirlikleri",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Cek Cumhuriyeti",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Cek Cumhuriyeti",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Cek Cumhuriyeti",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Cek Cumhuriyeti",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Cek Cumhuriyeti",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Cek Cumhuriyeti",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Cek Cumhuriyeti",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Afrika",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Dogu Asya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Dogu Asya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Dogu Asya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Danimarka",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Danimarka",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Danimarka",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Danimarka",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2006,
+			"Ulke": "Danimarka",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Danimarka",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Danimarka",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Danimarka",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Danimarka",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Danimarka",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Danimarka",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Danimarka",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Danimarka",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Estonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Estonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Estonya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Estonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Estonya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Estonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Estonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Estonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Estonya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Estonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Estonya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Estonya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Estonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Estonya",
+			"Sektor": "IK"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Kuzey Avrupa",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Afrika",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Finlandiya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Finlandiya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Finlandiya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Finlandiya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Finlandiya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Finlandiya",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Finlandiya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Finlandiya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Finlandiya",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Finlandiya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Finlandiya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Fransa",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Fransa",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Fransa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Fransa",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2001,
+			"Ulke": "Fransa",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Fransa",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Fransa",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Fransa",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Fransa",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Fransa",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Fransa",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Fransa",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2002,
+			"Ulke": "Fransa",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Fransa",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Fransa",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Fransa",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Fransa",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Kuzey Avrupa",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Afrika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Afrika",
+			"Sektor": "Ticaret"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Asya",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Bati Asya",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Bati Asya",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Asya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2016,
@@ -17562,31 +16467,211 @@
 		{
 			"Yil": 2016,
 			"Ulke": "Hollanda",
-			"Sektor": "Is Gelistirme"
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Amerika",
+			"Ulke": "Hollanda",
 			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
 		},
 		{
 			"Yil": 2015,
-			"Ulke": "Avustralya",
-			"Sektor": "Pazarlama"
+			"Ulke": "Hollanda",
+			"Sektor": "Tasarim"
 		},
 		{
-			"Yil": 2005,
-			"Ulke": "Amerika",
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
 			"Sektor": "IT"
 		},
 		{
-			"Yil": 2015,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2010,
-			"Ulke": "Avusturya",
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Hollanda",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2005,
+			"Ulke": "Hollanda",
+			"Sektor": "Ticaret"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Hollanda",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
 			"Sektor": "Ogrenci"
 		},
 		{
@@ -17596,202 +16681,177 @@
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Endustri"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Japonya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
 			"Ulke": "Hollanda",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
 			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Avusturya",
-			"Sektor": "Saglik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Israil",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2001,
-			"Ulke": "Amerika",
-			"Sektor": "Finans"
-		},
-		{
-			"Yil": 2006,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2006,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Amerika",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2007,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2006,
-			"Ulke": "Almanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2013,
-			"Ulke": "Amerika",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Tanzanya",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2008,
-			"Ulke": "Avustralya",
-			"Sektor": "IT"
 		},
 		{
 			"Yil": null,
-			"Ulke": "Avustralya",
-			"Sektor": "Tasarim"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Avustralya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Irak",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2016,
 			"Ulke": "Hollanda",
-			"Sektor": "Finans"
-		},
-		{
-			"Yil": null,
-			"Ulke": "Kanada",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Kambocya",
-			"Sektor": "Diger"
-		},
-		{
-			"Yil": 2017,
-			"Ulke": "Ingiltere",
-			"Sektor": "IT"
-		},
-		{
-			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Sanat"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Almanya",
-			"Sektor": "Muhendislik"
-		},
-		{
-			"Yil": 2015,
-			"Ulke": "Finlandiya",
 			"Sektor": "Mimar"
 		},
 		{
-			"Yil": 2010,
-			"Ulke": "Amerika",
-			"Sektor": "Finans"
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Isvicre",
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Sanat"
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2015,
-			"Ulke": "Ingiltere",
-			"Sektor": "Muhendislik"
+			"Ulke": "Hollanda",
+			"Sektor": "Isletme"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Amerika",
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2003,
+			"Ulke": "Hollanda",
 			"Sektor": "Diger"
 		},
 		{
-			"Yil": 2014,
-			"Ulke": "Isvicre",
-			"Sektor": "Muhendislik"
-		},
-		{
 			"Yil": 2016,
-			"Ulke": "Almanya",
-			"Sektor": "Is Gelistirme"
-		},
-		{
-			"Yil": 2010,
-			"Ulke": "Almanya",
+			"Ulke": "Hollanda",
 			"Sektor": "Akademi"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Ingiltere",
-			"Sektor": "Gazeteci"
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Birlesik Arap Emirlikleri",
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2006,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 1997,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2019,
+			"Ulke": "Hollanda",
+			"Sektor": "Ticaret"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Hollanda",
 			"Sektor": "IT"
 		},
 		{
@@ -17801,13 +16861,743 @@
 		},
 		{
 			"Yil": 2014,
-			"Ulke": "Japonya",
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
 			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Avustralya",
+			"Ulke": "Hollanda",
 			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Hollanda",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 20116,
+			"Ulke": "Hollanda",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Medya"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Hollanda",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Hollanda",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2009,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2005,
+			"Ulke": "Hollanda",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2007,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2020,
+			"Ulke": "Hollanda",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Hollanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2005,
+			"Ulke": "Ingiltere",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Ingiltere",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Ingiltere",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Ingiltere",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Analiz"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IK"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Ingiltere",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2019,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Ingiltere",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
 		},
 		{
 			"Yil": 2016,
@@ -17816,28 +17606,388 @@
 		},
 		{
 			"Yil": 2016,
-			"Ulke": "Hollanda",
-			"Sektor": "Finans"
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
 		},
 		{
-			"Yil": 2008,
-			"Ulke": "Hollanda",
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
 			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Ingiltere",
+			"Sektor": "Akademi"
 		},
 		{
 			"Yil": 2014,
-			"Ulke": "Hollanda",
+			"Ulke": "Ingiltere",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ingiltere",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Ingiltere",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ingiltere",
 			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2015,
-			"Ulke": "Peru",
-			"Sektor": "Ceviri"
+			"Ulke": "Ingiltere",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Is ve Yonetim"
 		},
 		{
 			"Yil": 2015,
-			"Ulke": "Finlandiya",
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Kanada",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Kanada",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Kanada",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
 			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Kanada",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Kanada",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2002,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Kanada",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 1999,
+			"Ulke": "Kanada",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Kanada",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
 		},
 		{
 			"Yil": null,
@@ -17845,14 +17995,899 @@
 			"Sektor": "Finans"
 		},
 		{
+			"Yil": 2015,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
 			"Yil": 2016,
-			"Ulke": "Almanya",
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Egitim"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Kanada",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Kanada",
+			"Sektor": "Lojistik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Kanada",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Kanada",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Kanada",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
 			"Sektor": "Muhendislik"
 		},
 		{
 			"Yil": 2017,
-			"Ulke": "Hollanda",
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kanada",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Kanada",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Kanada",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Bati Asya",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Asya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Asya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Afrika",
+			"Sektor": "Ticaret"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Afrika",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Bati Asya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Bati Asya",
 			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Asya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Asya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Orta Asya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Asya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2002,
+			"Ulke": "Afrika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kuzey Avrupa",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Kuzey Avrupa",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Asya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Bati Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Avrupa",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Macaristan",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Macaristan",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Macaristan",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Macaristan",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Macaristan",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Ticaret"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Lojistik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Afrika",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Afrika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Norvec",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Norvec",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Norvec",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Norvec",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Norvec",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Norvec",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2008,
+			"Ulke": "Norvec",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Norvec",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Norvec",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Norvec",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Norvec",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2004,
+			"Ulke": "Norvec",
+			"Sektor": "Endustri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Norvec",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2018,
+			"Ulke": "Papua Yeni Gine",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Ceviri"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Polonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Polonya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Polonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Polonya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Polonya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Polonya",
+			"Sektor": "IK"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Polonya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Polonya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Rusya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Rusya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Rusya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Rusya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Rusya",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Rusya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Rusya",
+			"Sektor": "Mimar"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Rusya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Rusya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Dogu Asya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Amerika",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "Temel Bilim"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Guneydogu Asya",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Guney Avrupa",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Dogu Avrupa",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Afrika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Bati Asya",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Afrika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Tayland",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Tayland",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2020,
+			"Ulke": "Tayland",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Tayland",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Tayland",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Tayland",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Tayland",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Tayland",
+			"Sektor": "Turizm"
+		},
+		{
+			"Yil": 2010,
+			"Ulke": "Tayland",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Tayland",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Tayland",
+			"Sektor": "Isletme"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Dogu Asya",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Dogu Asya",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Orta Asya",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2023,
+			"Ulke": "Afrika",
+			"Sektor": "Diger"
+		},
+		{
+			"Yil": 2012,
+			"Ulke": "Afrika",
+			"Sektor": "Is ve Yonetim"
+		},
+		{
+			"Yil": 2011,
+			"Ulke": "Afrika",
+			"Sektor": "Yemek"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Ukrayna",
+			"Sektor": "Tasarim"
+		},
+		{
+			"Yil": null,
+			"Ulke": "Ukrayna",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Ukrayna",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Ukrayna",
+			"Sektor": "Pazarlama"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Ukrayna",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Ukrayna",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ukrayna",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Ukrayna",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Guney Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Guney Amerika",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yeni Zelanda",
+			"Sektor": "Hukuk"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yeni Zelanda",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yeni Zelanda",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2013,
+			"Ulke": "Yeni Zelanda",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Yeni Zelanda",
+			"Sektor": "Muhendislik"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Yeni Zelanda",
+			"Sektor": "Saglik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Yeni Zelanda",
+			"Sektor": "Sanat"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Yeni Zelanda",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2017,
+			"Ulke": "Yunanistan",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yunanistan",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yunanistan",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yunanistan",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yunanistan",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yunanistan",
+			"Sektor": "Akademi"
+		},
+		{
+			"Yil": 2015,
+			"Ulke": "Yunanistan",
+			"Sektor": "Medya, Iletisim ve Yayincilik"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Yunanistan",
+			"Sektor": "Finans"
+		},
+		{
+			"Yil": 2014,
+			"Ulke": "Yunanistan",
+			"Sektor": "IT"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yunanistan",
+			"Sektor": "Ogrenci"
+		},
+		{
+			"Yil": 2016,
+			"Ulke": "Yunanistan",
+			"Sektor": "Diger"
 		}
 	];
 
