@@ -7,7 +7,6 @@
     <link rel="image_src" href="http://buyukgoc.github.io/pirinc.jpg" />
     <meta name="og:description" content="Son zamanlarda Türkiye'den yurtdışına göçlerin hepimiz farkındayız. Göçleri Türkiye'deki olaylara göre endeksleyerek bir görselleştirme yapmak istiyoruz. Buna yardım etmek için son zamanlarda Türkiye'den ayrılmış ya da ayrılmak üzere olan bir arkadaşınızın adını, taşındığı şehri ve bulunduğu sektörü paylaşabilir misiniz?
  " />
-
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -18,13 +17,11 @@
 
         <h3>Bu zamana kadar gönderilen kayıtlar (1750)</h3>
         <div class="nav">
-          Sankey Diyagram | <a href="map.html">Harita Görünümü</a>
+          <a href="index.html">Sankey Diyagram</a> | Harita Görünümü
         </div>
       </header>
-      Yıl: <input class="range" type="range" name="rangeInput" id="rangeInput" value="0" min="0" />
-      <output for="rangeInput" id="year">2016</output>
-      <button id="rotateButton" type="button" name="button" onclick="rotate()"> grafigi yatay/dikey cevir </button>
-      <div id="goc" class="rotate_true">
+      <div id="container">
+        <div class="map"></div>
       </div>
       <footer>
         <p>Bildirim yapmak için <a href="bildir.html">buraya</a> tıklayabilirsiniz.</p>
@@ -38,5 +35,7 @@
       </footer>
       <script src="./bundle.js"></script>
     </div>
+
+  <script src="bundle-map.js"></script>
   </body>
 </html>
