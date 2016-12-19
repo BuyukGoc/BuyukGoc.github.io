@@ -225,7 +225,7 @@
 	    var mouse = d3.mouse(svg.node()).map(function (d) {
 	      return parseInt(d);
 	    });
-	    tooltip.classed('hidden', false).attr('style', 'left:' + (mouse[0] + 15) + 'px; top:' + (mouse[1] - 95) + 'px').html(function () {
+	    tooltip.classed('hidden', false).attr('style', 'left:' + (mouse[0] + 15) + 'px; top:' + (mouse[1] + 155) + 'px').html(function () {
 	      var data = [];
 	      data = top.map(function (i) {
 	        return i.Sector + " :" + i.Count;
